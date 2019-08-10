@@ -14,3 +14,10 @@ services:
     restart: always
     ports:
       - 8080:8080
+  ngrok:
+    image: wernight/ngrok
+    restart: always
+    ports:
+      - 4040:4040
+    environment:
+      NGROK_PORT: 'adminer:8080'
