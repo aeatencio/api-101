@@ -2,7 +2,7 @@
 
 ```bash
 git clone https://github.com/aeatencio/mariadb-101
-cd mariadb
+cd mariadb-101
 docker-compose up
 ```
 
