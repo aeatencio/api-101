@@ -17,8 +17,6 @@ Use these credentials:
 - Username: `root`
 - Password: `example`
 
-Read more in [MariaDB Docker Official images](https://hub.docker.com/_/mariadb)
-
 ## Share your DB
 
 Visit <http://localhost:4040>
