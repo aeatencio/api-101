@@ -8,7 +8,7 @@ docker-compose up
 
 Wait for it to initialize
 
-## Acces your DB
+## Access your DB
 
 Visit <http://localhost:8080>
 
