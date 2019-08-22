@@ -2,6 +2,23 @@ version: '3.1'
 
 services:
 
+  api:
+    image: node:10
+    working_dir: /app
+    ports:
+    - "8082:8080"
+    volumes:
+      - ./api:/app
+    expose:
+      - "8080"
+    command: [ "node", "server.js" ]
+  ngrok-api:
+    image: wernight/ngrok
+    restart: always
+    ports:
+      - 4042:4040
+    environment:
+      NGROK_PORT: 'api:8080'
   db:
     image: mariadb
     restart: always
@@ -14,7 +31,7 @@ services:
     restart: always
     ports:
       - 8080:8080
-  ngrok:
+  ngrok-adminer:
     image: wernight/ngrok
     restart: always
     ports:

@@ -1,12 +1,29 @@
-# MariaDB + Adminer
+# Express.js + MariaDB + Adminer
 
 ```bash
-git clone https://github.com/aeatencio/mariadb-101
-cd mariadb-101
+git clone https://github.com/aeatencio/expressjs-mariadb-101
+cd expressjs-mariadb-101
+./dev-setup.sh
 docker-compose up
 ```
 
 Wait for it to initialize (the first time it takes longer)
+
+## Access your API
+
+Visit http://localhost:8082
+
+## Play with your API
+
+Modify the contents of your `api` folder and have fun!
+
+## Share your API
+
+Visit http://localhost:4042
+
+ngrok will provide you a public url to share your site
+
+## Fork of MariaDB + Adminer
 
 ## Access your DB
 
