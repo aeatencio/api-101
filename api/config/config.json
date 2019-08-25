@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "root",
+    "password": "example",
+    "database": "mysql",
+    "host": "db",
+    "dialect": "mariadb",
+    "operatorsAliases": false
+  }
+}

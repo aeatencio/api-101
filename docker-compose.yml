@@ -8,10 +8,10 @@ services:
     ports:
     - "8082:8080"
     volumes:
-      - ./api:/app
+      - ./api:/usr/src/app/
     expose:
       - "8080"
-    command: [ "node", "server.js" ]
+    command: /usr/src/app/entrypoint.sh
     depends_on:
       - db
   ngrok-api:

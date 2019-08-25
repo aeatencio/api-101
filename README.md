@@ -10,6 +10,14 @@ docker-compose up
 
 Wait for it to initialize (the first time it takes longer)
 
+## Sequelize commands
+
+Take a look at them
+
+```bash
+docker-compose run --rm api node_modules/.bin/sequelize
+```
+
 ## Access your API
 
 Visit http://localhost:8082
