@@ -16,7 +16,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "sequelize": "^5.16.0",
-    "mariadb": "^2.1.0",
+    "mariadb": "^2.1.0"
+  },
+  "devDependencies": {
     "sequelize-cli": "^5.5.0"
   }
 }
