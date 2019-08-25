@@ -12,6 +12,8 @@ services:
     expose:
       - "8080"
     command: [ "node", "server.js" ]
+    depends_on:
+      - db
   ngrok-api:
     image: wernight/ngrok
     restart: always
@@ -19,6 +21,8 @@ services:
       - 4042:4040
     environment:
       NGROK_PORT: 'api:8080'
+    depends_on:
+      - api
   db:
     image: mariadb
     restart: always
@@ -31,6 +35,8 @@ services:
     restart: always
     ports:
       - 8080:8080
+    depends_on:
+      - db
   ngrok-adminer:
     image: wernight/ngrok
     restart: always
@@ -38,3 +44,5 @@ services:
       - 4040:4040
     environment:
       NGROK_PORT: 'adminer:8080'
+    depends_on:
+      - adminer
