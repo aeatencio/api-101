@@ -1,8 +1,10 @@
-# Express.js + MariaDB + Adminer
+# API 101
+
+Express.js + Sequelize + MariaDB + Adminer
 
 ```bash
-git clone https://github.com/aeatencio/expressjs-mariadb-101
-cd expressjs-mariadb-101
+git clone https://github.com/aeatencio/api-101
+cd api-101
 docker-compose up
 ```
 
@@ -20,9 +22,11 @@ Modify the contents of your `api` folder and have fun!
 
 Visit http://localhost:4042
 
-ngrok will provide you a public url to share your site
+ngrok will provide you a public url to share your `API`
 
-## Fork of MariaDB + Adminer
+## MariaDB + Adminer
+
+Fork of <https://github.com/aeatencio/mariadb-101>
 
 ## Access your DB
 
