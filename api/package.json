@@ -1,6 +1,11 @@
 {
-  "name": "docker_web_app",
-  "version": "1.0.0",
+  "name": "expressjs-mariadb-101",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aeatencio/expressjs-mariadb-101.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "version": "0.0.1",
   "description": "Node.js on Docker",
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
@@ -8,6 +13,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.17.1"
   }
 }

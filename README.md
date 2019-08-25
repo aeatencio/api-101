@@ -3,7 +3,6 @@
 ```bash
 git clone https://github.com/aeatencio/expressjs-mariadb-101
 cd expressjs-mariadb-101
-./dev-setup.sh
 docker-compose up
 ```
 
