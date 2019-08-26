@@ -18,9 +18,25 @@ Take a look at them
 docker-compose run --rm api node_modules/.bin/sequelize
 ```
 
+Run your DB Migrations
+
+```bash
+docker-compose run --rm api node_modules/.bin/sequelize db:migrate
+```
+
+Seed your DB
+
+```bash
+docker-compose run --rm api node_modules/.bin/sequelize db:seed:all
+```
+
 ## Access your API
 
 Visit http://localhost:8082
+
+## Take a look at the examples
+
+http://localhost:8082/examples
 
 ## Play with your API
 
