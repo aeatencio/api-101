@@ -9,8 +9,6 @@ services:
     - "8082:3000"
     volumes:
       - ./api:/usr/src/app/
-    expose:
-      - "8080"
     command: /usr/src/app/entrypoint.sh
     depends_on:
       - db-cli
@@ -21,7 +19,7 @@ services:
     ports:
       - 4042:4040
     environment:
-      NGROK_PORT: 'api:8080'
+      NGROK_PORT: 'api:3000'
     depends_on:
       - api
   db:
