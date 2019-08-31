@@ -13,7 +13,8 @@ services:
       - "8080"
     command: /usr/src/app/entrypoint.sh
     depends_on:
-      - db
+      - db-cli
+    restart: always
   ngrok-api:
     image: wernight/ngrok
     restart: always
@@ -30,6 +31,14 @@ services:
       MYSQL_ROOT_PASSWORD: example
     volumes:
       - ./database:/var/lib/mysql
+  db-cli:
+    image: mariadb
+    depends_on:
+      - db
+    volumes:
+      - ./db-cli:/usr/src/app/
+    command: mysql -h db -u root --password=example -e "CREATE DATABASE IF NOT EXISTS example_db;"
+    restart: on-failure
   adminer:
     image: adminer
     restart: always

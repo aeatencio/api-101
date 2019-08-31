@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "example",
-    "database": "mysql",
+    "database": "example_db",
     "host": "db",
     "dialect": "mariadb",
     "operatorsAliases": false
